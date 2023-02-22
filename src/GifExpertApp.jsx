@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { AddCategory } from './components/AddCategory'
-import { GifGrid } from './components/GifGrid'
+
+import { GifGrid, AddCategory } from './components'
 
 export const GifExpertApp = () => {
 
@@ -8,43 +8,36 @@ export const GifExpertApp = () => {
 
     // Añadir categorias
     const handleAdd = (newCategory) => {
-        //Pasar new category a lowercase
-        // newCategory = newCategory.toLowerCase()
-        //Si newCategory ya existe en el arreglo
+        
         if (categories.includes(newCategory)) return
         setCategories(cats => [newCategory, ...cats])
-        
-    }
 
+    }
 
     return (
         <div className='bg-sky-400 p-10'>
-            {/* TITULO */}
+
             <h1 className='text-4xl text-center'>GifExpertApp</h1>
-            {/* INPUT */}
+
             <AddCategory
                 onNewCategory={handleAdd}
-            // setCategories={setCategories}
-            // categories = {categories}
             />
-
-            {/* LISTA DE GIFS */}
-            <h2 className='p-2'>Listado</h2>
 
             {
                 categories.map(category =>
                 (
-                    <GifGrid
-                        key={category}
-                        category={category}
-                    />
+                    <div
+                        className='py-10'
+                        key={category}>
+                        <h3 className='text-2xl text-center pb-4'>{category}</h3>
+
+                        <GifGrid
+                            category={category}
+                        />
+                    </div>
                 )
                 )
             }
-
-
-
-            {/* GIF ITEM */}
         </div>
     )
 }
