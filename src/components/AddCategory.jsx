@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 
+
+
+
 export const AddCategory = ({onNewCategory}) => {
 
     const [inputValue, setInputValue] = useState('')
@@ -22,7 +25,8 @@ export const AddCategory = ({onNewCategory}) => {
             <input
                 type="text"
                 className='bg-gray-200 p-2 rounded-md m-2'
-                placeholder='Add something... '
+                // placeholder='Add something... '
+                placeholder='Añade algo...'
                 value={inputValue}
                 onChange={handleInputChange}
             />

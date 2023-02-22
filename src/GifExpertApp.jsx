@@ -8,10 +8,8 @@ export const GifExpertApp = () => {
 
     // Añadir categorias
     const handleAdd = (newCategory) => {
-        
         if (categories.includes(newCategory)) return
         setCategories(cats => [newCategory, ...cats])
-
     }
 
     return (
