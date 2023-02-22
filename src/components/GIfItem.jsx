@@ -1,8 +1,5 @@
 import { FaFacebook, FaTwitter, FaWhatsapp } from 'react-icons/fa';
 
-
-
-
 export const GIfItem = ({ url, title }) => {
 
     const shareUrl = encodeURI(url);
