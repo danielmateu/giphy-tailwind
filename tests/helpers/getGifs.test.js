@@ -1,7 +1,5 @@
 import { getGifs } from "../../src/helpers/getGifs"
 
-
-
 describe('Pruebas sobre getGifs.js', () => {
 
     //Debe retornar un array
@@ -33,7 +31,7 @@ describe('Pruebas sobre getGifs.js', () => {
     //Debe retornar un arreglo de objetos con las propiedades img, id y url y verificar que son string
     test('Debe de traer un arreglo de objetos con las propiedades img, id y url y verificar que son string', async () => {
         const gifs = await getGifs('One Punch')
-        
+
         expect(typeof gifs[0].id).toBe('string')
         expect(typeof gifs[0].title).toBe('string')
         expect(typeof gifs[0].url).toBe('string')
