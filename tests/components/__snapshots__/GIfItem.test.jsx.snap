@@ -3,7 +3,7 @@
 exports[`Pruebas sobre <GIfItem/> Debe hacer match con el snapshot 1`] = `
 <div>
   <div
-    class="p-2 rounded-md shadow-md hover:shadow-none hover:border-gray-500 bg-white transition-all flex flex-col gap-2 h-min col-span-1 row-span-2"
+    class="p-2 rounded-md shadow-md hover:shadow-none hover:border-gray-500 bg-white transition-all flex flex-col gap-2 h-min "
   >
     <img
       alt="Un titulo"

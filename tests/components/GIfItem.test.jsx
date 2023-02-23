@@ -1,5 +1,5 @@
 
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import { GIfItem } from "../../src/components/GIfItem";
 
 
@@ -20,5 +20,18 @@ describe('Pruebas sobre <GIfItem/>', () => {
         const element = getByText(title);
         expect(element).toBeTruthy();
     })
+
+    //Debe mostrar la imagen con el url y el alt indicado
+    test('Debe mostrar la imagen con el url y el alt indicado', () => {
+        render(<GIfItem title={title} url={url}/>)
+        // screen.debug();
+        // expect(screen.getByRole('img').src).toBe(url)
+        // expect(screen.getByRole('img').alt).toBe(title)
+        const { src, alt } = screen.getByRole('img')
+        expect(src).toBe(url)
+        expect(alt).toBe(alt)
+    })
+
+    
 
 })

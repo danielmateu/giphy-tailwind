@@ -32,7 +32,8 @@ export const GIfItem = ({ url, title }) => {
 
 
         <div
-            className='p-2 rounded-md shadow-md hover:shadow-none hover:border-gray-500 bg-white transition-all flex flex-col gap-2 h-min col-span-1 row-span-2'
+            className='p-2 rounded-md shadow-md hover:shadow-none hover:border-gray-500 bg-white transition-all flex flex-col gap-2 h-min '
+            // className='bg-gray-200 rounded-md aspect-w-1 aspect-h-1 p-4'
         >
             <img
                 src={url}
