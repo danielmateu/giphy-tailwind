@@ -13,15 +13,12 @@ describe('Pruebas en <GifGrid />', () => {
         const category = 'One Punch';
 
         useFetchGifs.mockReturnValue({
-            // data: [],
-            // loading: true
             images: [],
             isLoading: true
         })
 
         render(<GifGrid category={category} />)
         expect(screen.getByText('Loading...'))
-
 
     })
 
@@ -41,7 +38,7 @@ describe('Pruebas en <GifGrid />', () => {
                 title: 'Saitama'
             }
         ]
-        
+
         useFetchGifs.mockReturnValue({
             images: gifs,
             isLoading: false
@@ -51,6 +48,7 @@ describe('Pruebas en <GifGrid />', () => {
         // screen.debug();
 
         expect(screen.getAllByRole('img').length).toBe(2)
+        
 
     })
 

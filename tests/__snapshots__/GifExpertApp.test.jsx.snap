@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en el componente GifExpertApp Debe hacer match con el snapshot 1`] = `
+<div>
+  <div
+    class="bg-sky-200 "
+  >
+    <h1
+      class="text-4xl text-center"
+    >
+      GifExpertApp
+    </h1>
+    <form
+      aria-label="form"
+    >
+      <input
+        class="bg-gray-200 p-2 rounded-md m-2"
+        placeholder="Añade algo..."
+        type="text"
+        value=""
+      />
+    </form>
+    <div
+      class="py-10"
+    >
+      <h3
+        class="text-2xl text-center pb-4"
+      >
+        One Punch
+      </h3>
+      Loading...
+      <div
+        class=" px-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 items-start place-items-center "
+      />
+    </div>
+  </div>
+</div>
+`;
