@@ -65,6 +65,7 @@ describe('Pruebas en <AddCategory />', () => {
             fireEvent.submit(form)
     
             expect(onNewCategory).not.toHaveBeenCalled()
+            expect(onNewCategory).toHaveBeenCalledTimes(0)
 
     })
 
