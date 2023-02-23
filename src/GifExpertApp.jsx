@@ -13,7 +13,7 @@ export const GifExpertApp = () => {
     }
 
     return (
-        <div className='bg-sky-400 p-10'>
+        <div className='bg-sky-200 '>
 
             <h1 className='text-4xl text-center'>GifExpertApp</h1>
 
